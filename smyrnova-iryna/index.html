@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"> 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Test task</title>
+</head>
+<body>
+    <div id="sound" class="sound-container" onclick="soundHandler()">
+        <svg class="sound-icon"><use xlink:href="./img/sprite.svg#icon-sound-on"></use></svg>
+    </div>
+    <section id="page1" class="preview">
+        <img class="preview-hero2" src="./img/hero2.png">
+        <img class="preview-hero1" src="./img/hero1.png">
+        <div class="preview-text">
+            <p class="preview-caption">Stop spending time on mediocre online stuff!</p>
+            <img class="preview-heading-mobile" src="./img/titlemobile.svg">
+            <img class="preview-heading" src="./img/title.svg">
+            <p class="preview-caption-capitalized">instead and experience unparalleled pleasure like you've never seen before.</p>
+        </div>
+        <div class="preview-buttons">
+            <button class="preview-button decline">No,thanks</button>
+            <button class="preview-button" onclick="handleNextButtonClick(1)">Continue</button>
+        </div>
+    </section>
+    <section id="page2" class="preview">
+        <img class="option-mobile-title" src="./img/optionmobile.svg">
+        <img class="option-title" src="./img/option.svg">
+        <div class="swiper">
+            <div id="slider-container" class="swiper-wrapper"></div>
+                <div class="swiper-button-prev">
+                    <img class="arrow-mobile prev" src="./img/arrow-left-mobile.svg">
+                    <img class="arrow desctop-prev" src="./img/arrow-left.svg">
+                </div>
+                <div class="swiper-button-next">
+                    <img class="arrow-mobile next" src="./img/arrow-right-mobile.svg">
+                    <img class="arrow desctop-next" src="./img/arrow-right.svg">
+                </div>
+          </div>     
+        <button class="option-button" onclick="handleNextButtonClick(2)">Next</button>
+    </section>
+    <section id="page3" class="preview">
+        <img class="hero3" src="./img/hero3.png">
+        <img class="hero4" src="./img/hero4.png">
+        <div class="warning-container">  
+            <img class="warning-title-mobile" src="./img/warning-mobile.svg">
+            <img class="warning-title" src="./img/warning.svg">
+            <p class="warning-caption">You must be at least 18 years old and comfortable with mature topics to play the game.</p> 
+        </div>   
+        <button class="option-button page3-button">Ok, Continue</button>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
