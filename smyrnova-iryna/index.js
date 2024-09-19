@@ -19,11 +19,11 @@ const handleNextButtonClick = (id) => {
 const slides = [
     {
         hero: "sliderhero1.png",
-        caption: "Your Neighbor"
+        caption: "Step-sister"
     },
     {
         hero: "sliderhero2.png",
-        caption: "Step-sister"
+        caption: "Your Neighbor"
     },
     {
         hero: "sliderhero3.png",
